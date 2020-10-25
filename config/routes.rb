@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get 'messages/index'
+  root to: "messages#index"
+# railsの初期画面でトップページへ飛ぶように設定（P:コントローラー名とアクション名はダブルで囲む）
 end
