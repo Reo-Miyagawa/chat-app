@@ -2,7 +2,6 @@ class UsersController < ApplicationController
 
   def edit
   end
-  # editアクションでは、ビューファイルを表示するだけなので、アクションの定義のみ
 
   def update
     if current_user.update(user_params)
