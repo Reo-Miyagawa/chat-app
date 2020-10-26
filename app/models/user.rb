@@ -8,4 +8,7 @@ class User < ApplicationRecord
   # データを登録する際に、一定の制約をかけること
   # validates :カラム名, バリデーションの種類
   # presence: trueでからの場合登録不可
+
+  has_many :room_users
+  has_many :rooms, through: room_users
 end
