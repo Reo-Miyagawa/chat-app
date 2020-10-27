@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root to: "rooms#index"
 # railsの初期画面でトップページへ飛ぶように設定（P:コントローラー名とアクション名はダブルで囲む）
   resources :users, only: [:edit, :update]
-  resources :rooms, only: [:new, :create] do
+  resources :rooms, only: [:new, :create, :destroy] do
     resources :messages, only: [:index, :create]
   end
 end
